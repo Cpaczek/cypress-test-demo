@@ -6,14 +6,6 @@ describe('Form Tests', () => {
     cy.get('input').type('test');
     cy.get('button').click();
     cy.get('form').submit();
-    cy.get('h1').should('have.text', 'Form Submitted break');
-
-
-  
-
-
-
-
-
+    cy.get('h1').should('have.text', 'Form Submitted');
   })
 })
