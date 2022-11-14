@@ -56,7 +56,6 @@ jobs:
           start: yarn start
           wait-on: http://localhost:3000
           wait-on-timeout: 60
-          record: true
           parallel: true
           group: 'Github Actions'
           spec: 'cypress/integration/**/*'
