@@ -17,7 +17,7 @@ const submitForm = async () => {
         }, 1000)
     })
     //alert
-    alert('Form submitted')
+    alert('Form submitted break')
 }
 
 </script>
