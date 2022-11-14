@@ -1,0 +1,65 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Jest & Cypress Tour",
+  "steps": [
+    {
+      "title": "Introduction",
+      "description": "# Jest & Cypress Code Tour\r\nThis is a quick walk through of how to E2E test and Unit Test using Jest and Cypress"
+    },
+    {
+      "file": "nuxt.config.js",
+      "description": "# Nuxt Project\r\nWe are in a basic Nuxt project but this works with any front-end library",
+      "line": 1
+    },
+    {
+      "file": "jest.config.js",
+      "description": "Here is our Jest Config, because we are using nuxt we are also targeting vue files",
+      "line": 1
+    },
+    {
+      "file": "cypress.config.js",
+      "description": "Here is our Cypress Config, it is currently left as boiler plate. View Docs [Here](https://docs.cypress.io/guides/references/configuration)",
+      "line": 1
+    },
+    {
+      "file": "test/NuxtLogo.spec.js",
+      "description": "Our Jest Unit Tests are in the test folder and we are currently checking that the `NuxtLogo.vue` component. You can also use jest to test Javascript Functions",
+      "line": 10
+    },
+    {
+      "directory": "cypress",
+      "description": "# /cypress\r\nall of our cypress tests and other files are in our cypress folder."
+    },
+    {
+      "file": "cypress/e2e/spec.cy.js",
+      "description": "In `/cypress/e2e` is where we will find our E2E tests",
+      "line": 11
+    },
+    {
+      "file": "cypress/e2e/spec.cy.js",
+      "description": "We start by going to localhost:3000",
+      "line": 3
+    },
+    {
+      "file": "cypress/e2e/spec.cy.js",
+      "description": "Here we navigate to our test page and submit the form",
+      "line": 4
+    },
+    {
+      "file": "cypress/e2e/spec.cy.js",
+      "description": "Here we are checking that the `<h1>` tag shows up after the form submits\r\n\r\n",
+      "line": 9
+    },
+    {
+      "file": "pages/test.vue",
+      "description": "Here is our submit logic, you can see that we are waiting for 1 second before enableing the h1 tag. This simulates the delay from an API response. Cypress will automatically wait for promises to finish so you don't need to add sleep/wait calls for Cypress to work",
+      "line": 26
+    },
+    {
+      "file": "cypress/e2e/spec.cy.js",
+      "description": "To run this test you can run \r\n>> yarn run cypress run \r\n\r\nor you can open the Cypress GUI using\r\n\r\n>> yarn run cypress open",
+      "line": 12
+    }
+  ],
+  "ref": "tour"
+}
