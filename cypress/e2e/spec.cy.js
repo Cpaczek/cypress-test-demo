@@ -1,5 +1,5 @@
 describe('empty spec', () => {
-  it('passes', () => {
+  it('Check Form Submission', () => {
     cy.visit('http://localhost:3000/');
     cy.get('.text-2xl > a').click();
     cy.get('input').click();
