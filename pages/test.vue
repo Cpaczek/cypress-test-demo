@@ -22,7 +22,7 @@ const submitForm = async () => {
         }, 1000)
     
     })
-    submit.value = true
+    submit.value = false
     
 
 }
