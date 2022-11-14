@@ -1,4 +1,4 @@
-describe('empty spec', () => {
+describe('Form Tests', () => {
   it('Check Form Submission', () => {
     cy.visit('http://localhost:3000/');
     cy.get('.text-2xl > a').click();
@@ -6,10 +6,14 @@ describe('empty spec', () => {
     cy.get('input').type('test');
     cy.get('button').click();
     cy.get('form').submit();
-    // check that alert opened
-    cy.on('window:alert', (str) => {
-      expect(str).to.equal('Form submitted');
-    });
+    cy.get('h1').should('have.text', 'Form Submitted break');
+
+
+  
+
+
+
+
 
   })
 })
