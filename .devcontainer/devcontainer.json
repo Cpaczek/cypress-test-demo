@@ -19,6 +19,6 @@
 			]
 		}
 	},
-	"onCreateCommand": "yarn build",
+	"onCreateCommand": "yarn install && yarn build",
 	"postStartCommand": "yarn start"
 }
